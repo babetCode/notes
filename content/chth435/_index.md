@@ -10,7 +10,7 @@ tags:
 
 CHTH435 Human Response to Stress - Fall 2025
 
-<!-- more -->
+<!--more-->
 
 {{< details title="Chatter" closed="true" >}}
 {{< tallpdf path="/pdfs/chth435/chatter.pdf" >}}

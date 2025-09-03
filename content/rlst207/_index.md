@@ -10,4 +10,4 @@ tags:
 
 RLST 207 Myth and Belief - Fall 2025
 
-<!-- more -->
+<!--more-->

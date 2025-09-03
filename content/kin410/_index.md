@@ -10,7 +10,7 @@ tags:
 
 KIN410 Advanced Strength & Conditioning - Fall 2025
 
-<!-- more -->
+<!--more-->
 
 {{< details title="Textbook" closed="true" >}}
 {{< tallpdf path="/pdfs/kin410/essentials-of-strength-and-conditioning.pdf" >}}

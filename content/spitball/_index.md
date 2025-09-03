@@ -4,6 +4,7 @@ draft: false
 title: 'Spitball'
 cascade:
     type: docs
+breadcrumbs: false
 ---
 
 A place to spitball ideas I want to understand better, or before publishing them to my main site.
