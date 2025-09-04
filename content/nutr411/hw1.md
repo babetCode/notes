@@ -74,44 +74,48 @@ Using the online website, [myfitnesspal.com](myfitnesspal.com), enter your diet 
 8) Do your answers make it clear that you understand and have mastered the material and concepts? Explanations, details, and examples help convey understanding and mastery of the material and concept.
 {{< /details >}}
 
+{{< details title="Template" closed="true" >}}
+<iframe src="https://docs.google.com/document/d/1bOq9znKx2Cif6q_rhQR__tQr6VnWDCXy/edit?usp=sharing&ouid=100857561421656705739&rtpof=true&sd=true" title="Template" style="width: 100%; height: 75vh; margin: 0em"></iframe>
+{{< /details >}}
+
 ### Energy Calculator
-{{< rawhtml >}}
-<div class="border border-gray-600 rounded-md">
-<form id="bmrForm" class="my-6">
-    <div  class="flex flex-row justify-evenly">
+
+<div style="border: 1px solid #4b5563; border-radius: 0.375rem;">
+<form id="bmrForm" style="margin: 1.5rem 0;">
+    <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
         <label>
-            Age: <input class="mb-4 border border-gray-600 rounded-md px-1 w-16" type="number" id="age" placeholder="Years" required>
+            Age: <input style="margin-bottom: 1rem; border: 1px solid #4b5563; border-radius: 0.375rem; padding-left: 0.25rem; padding-right: 0.25rem; width: 4rem;" type="number" id="age" placeholder="Years" required>
         </label>
         <label>
-            Height: <input class="mb-4 border border-gray-600 rounded-md px-1 w-16" type="number" id="height" placeholder="cm" required>
+            Height: <input style="margin-bottom: 1rem; border: 1px solid #4b5563; border-radius: 0.375rem; padding-left: 0.25rem; padding-right: 0.25rem; width: 4rem;" type="number" id="height" placeholder="cm" required>
         </label>
         <label>
-            Weight: <input class="mb-4 border border-gray-600 rounded-md px-1 w-16" type="number" id="weight" placeholder="kg" required>
+            Weight: <input style="margin-bottom: 1rem; border: 1px solid #4b5563; border-radius: 0.375rem; padding-left: 0.25rem; padding-right: 0.25rem; width: 4rem;" type="number" id="weight" placeholder="kg" required>
         </label>
         <label>
             Sex:
-            <select class="mb-4 border border-gray-600 rounded-md px-1 w-16" id="sex">
+            <select style="margin-bottom: 1rem; border: 1px solid #4b5563; border-radius: 0.375rem; padding-left: 0.25rem; padding-right: 0.25rem; width: 4rem;" id="sex">
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
             </select>
         </label>
     </div>
-    <div class="flex justify-center">
-        <button type="submit" class="w-20 bg-blue-500 text-white rounded hover:bg-blue-600">Calculate</button>
+    <div style="display: flex; justify-content: center;">
+        <button type="submit" style="width: 10rem; background-color: #3b82f6; color: white; border-radius: 0.375rem; border: none; padding: 0.5rem; cursor: pointer;" onmouseover="this.style.backgroundColor='#2563eb'" onmouseout="this.style.backgroundColor='#3b82f6'">Calculate</button>
     </div>
 </form>
-<div id="bmrResult" class="mx-6"></div>
-<p>&nbsp;Note: this calculator uses the&nbsp;<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7784146/#:~:text=In%20men%2C%20the%20Harris%2DBenedict,4.6756%20x%20age%20in%20years.">Harris-Benedict formula</a>.</p>
+<div id="bmrResult" style="margin: 1em"></div>
+<p style="margin: 0em 1em">Note: this calculator uses the&nbsp;<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7784146/#:~:text=In%20men%2C%20the%20Harris%2DBenedict,4.6756%20x%20age%20in%20years.">Harris-Benedict formula</a>.</p>
 </div>
 <script>
 function cho(cals) {
-  return `\({(cals*0.45).toFixed(0)}-\){(cals*0.65).toFixed(0)} Kcal \({(cals*0.45/4).toFixed(0)}-\){(cals*0.65/4).toFixed(0)} grams`;
+  return `${(cals*0.45).toFixed(0)}-${(cals*0.65).toFixed(0)} Kcal ${(cals*0.45/4).toFixed(0)}-${(cals*0.65/4).toFixed(0)} grams`;
 }
 function fat(cals) {
-  return `\({(cals*0.2).toFixed(0)}-\){(cals*0.3).toFixed(0)} Kcal \({(cals*0.2/9).toFixed(0)}-\){(cals*0.3/9).toFixed(0)} grams`;
+  return `${(cals*0.2).toFixed(0)}-${(cals*0.3).toFixed(0)} Kcal ${(cals*0.2/9).toFixed(0)}-${(cals*0.3/9).toFixed(0)} grams`;
 }
 function pro(cals) {
-  return `\({(cals*0.1).toFixed(0)}-\){(cals*0.35).toFixed(0)} Kcal \({(cals*0.1/4).toFixed(0)}-\){(cals*0.35/4).toFixed(0)} grams`;
+  return `${(cals*0.1).toFixed(0)}-${(cals*0.35).toFixed(0)} Kcal ${(cals*0.1/4).toFixed(0)}-${(cals*0.35/4).toFixed(0)} grams`;
 }
 document.getElementById('bmrForm').onsubmit = function(e) {
   e.preventDefault();
@@ -152,7 +156,6 @@ document.getElementById('bmrForm').onsubmit = function(e) {
   document.getElementById('bmrResult').innerHTML = html;
 };
 </script>
-{{< /rawhtml >}}
 
 <!-- Fiber intake
 * Fiber content in foods DOES NOT count towards the total calories
