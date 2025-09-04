@@ -4,50 +4,35 @@
 {{- $height := .Get "height" | default "95" -}}
 {{- $url := partial "utils/file-path" (dict "page" .Page "path" $path) -}}
 
-<style>
-  .hextra-pdf {
-    display: block;
-    margin: 0 auto;
-    max-width: 900px;
-  }
-
-  .fullscreenBtn {
+<div class="hextra-pdf" style="display: block; margin: 0 auto; max-width: 900px;">
+  <button class="fullscreenBtn" style="
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0.25rem auto;
     padding: 0.25rem 0.5rem;
-    background-color: #60a5fa;
+    background-color: #60a5fa !important;
     border: none;
     border-radius: 9999px;
-    color: #fff;
+    color: #fff !important;
     cursor: pointer;
-    transition: background 0.2s;
     font-size: 1rem;
-  }
-
-  .fullscreenBtn:hover {
-    background-color: #3b82f6;
-  }
-
-  .fullscreenBtn i {
-    margin-right: 0.5rem;
-  }
-
-  .hextra-pdf iframe {
+  ">
+    <i class="fas fa-expand" style="margin-right: 0.5rem;"></i>
+    <span>Full Screen</span>
+  </button>
+  <iframe src="{{ $url | safeURL }}" style="
     width: 100%;
     min-height: {{ $height }}vh;
     border: 0;
     display: block;
+  "></iframe>
+</div>
+
+<style>
+  .fullscreenBtn:hover {
+    background-color: #3b82f6 !important;
   }
 </style>
-
-<div class="hextra-pdf">
-  <button class="fullscreenBtn">
-    <i class="fas fa-expand"></i>
-    <span>Full Screen</span>
-  </button>
-  <iframe src="{{ $url | safeURL }}"></iframe>
-</div>
 
 <script src="/js/full-screen.js"></script>
