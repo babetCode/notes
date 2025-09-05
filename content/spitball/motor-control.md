@@ -41,3 +41,12 @@ M-->D@{ shape: braces, label: "By Duration" };
 ## Skill Aquisition Models
 
 There are
+
+
+{{< details title="Textbook" closed="true" >}}
+{{< tallpdf path="/pdfs/How_We_Learn_to_Move_Rob_Gray.pdf" >}}
+{{< /details >}}
+
+{{< details title="Textbook" closed="true" >}}
+{{< tallpdf path="/pdfs/Learning_to_Optimize_Movement_Rob_Gray.pdf" >}}
+{{< /details >}}

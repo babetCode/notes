@@ -34,12 +34,12 @@ markup:
 params:
   navbar:
     displayTitle: true
-    displayLogo: true
-    logo:
-      path: '/images/blogo.svg'
-      dark: '/images/blogo-dark.svg'
-      width: 25
-      height: 25
+    displayLogo: false
+    # logo:
+    #   path: '/images/blogo.svg'
+    #   dark: '/images/blogo-dark.svg'
+    #   width: 25
+    #   height: 25
 
   footer:
     displayCopyright: false
