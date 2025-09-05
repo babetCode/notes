@@ -54,9 +54,9 @@ params:
   displayUpdatedDate: true
   dateFormat: "January 2, 2006"
 
-  # page:
+  page:
   #   # full (100%), wide (90rem), normal (1280px)
-  #   width: wide
+    width: wide
 
   blog:
     list:

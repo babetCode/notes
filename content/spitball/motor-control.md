@@ -38,4 +38,6 @@ D-->Long(Long Term);
 M-->D@{ shape: braces, label: "By Duration" };
 ```
 
+## Skill Aquisition Models
 
+There are
