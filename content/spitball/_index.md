@@ -11,4 +11,3 @@ A place to spitball ideas I want to understand better, or before publishing them
 
 <!--more-->
 
-<iframe src="https://ajbnotes.netlify.app/spitball/" title="Template" style="width: 100%; height: 75vh; margin: 0em"></iframe>

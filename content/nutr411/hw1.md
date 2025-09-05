@@ -78,7 +78,7 @@ Using the online website, [myfitnesspal.com](myfitnesspal.com), enter your diet 
 <iframe src="https://docs.google.com/document/d/1bOq9znKx2Cif6q_rhQR__tQr6VnWDCXy/edit?usp=sharing&ouid=100857561421656705739&rtpof=true&sd=true" title="Template" style="width: 100%; height: 75vh; margin: 0em"></iframe>
 {{< /details >}}
 
-### Energy Calculator
+## Energy Estimate Calculator
 
 <div style="border: 1px solid #4b5563; border-radius: 0.375rem;">
 <form id="bmrForm" style="margin: 1.5rem 0;">
@@ -101,11 +101,11 @@ Using the online website, [myfitnesspal.com](myfitnesspal.com), enter your diet 
         </label>
     </div>
     <div style="display: flex; justify-content: center;">
-        <button type="submit" style="width: 10rem; background-color: #3b82f6; color: white; border-radius: 0.375rem; border: none; padding: 0.5rem; cursor: pointer;" onmouseover="this.style.backgroundColor='#2563eb'" onmouseout="this.style.backgroundColor='#3b82f6'">Calculate</button>
+        <button type="submit" style="background-color: #3b82f6; color: white; border-radius: 0.375rem; border: none; padding: 0.15em 0.5em; cursor: pointer;" onmouseover="this.style.backgroundColor='#2563eb'" onmouseout="this.style.backgroundColor='#3b82f6'">Calculate</button>
     </div>
 </form>
 <div id="bmrResult" style="margin: 1em"></div>
-<p style="margin: 0em 1em">Note: this calculator uses the&nbsp;<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7784146/#:~:text=In%20men%2C%20the%20Harris%2DBenedict,4.6756%20x%20age%20in%20years.">Harris-Benedict formula</a>.</p>
+<p style="margin: 0em 1em">Note: This calculator uses the&nbsp;<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7784146/#:~:text=In%20men%2C%20the%20Harris%2DBenedict,4.6756%20x%20age%20in%20years.">Harris-Benedict formula</a>, but may differ in rounding from <a href="http://manytools.org/handy/bmr-calculator/go">manytools.org</a>.</p>
 </div>
 <script>
 function cho(cals) {
@@ -170,5 +170,14 @@ document.getElementById('bmrForm').onsubmit = function(e) {
     * Bran
     * Keto-friendly foods -->
 
+## Typical Diet Summary Table
+![Diet Summary Table](/images/nutr411/cronometer-sep-3.png)
 
+## Target Diet
+![Diet Summary Table](/images/nutr411/target-cronometer-hw1.png)
 
+### Changes Made
+>List of at least 6 foods that were removed from and or added to your typical diet to increase your compliance with Recommendations for a Healthy Diet and Lifestyle AND detailed explanation of at least one potential health benefit linked to that dietary change.
+
+**1) Removed 2.875 pints of half & half: This aligns with recommendations to reduce saturated fat consumption.** Consuming 5.75 cups (about 1.38 liters) of half and half daily—containing roughly 165.6 grams of fat and 1,490 calories from fat alone—far exceeds dietary guidelines for total fat, saturated fat, and cholesterol. The World Health Organization recommends limiting fat intake to less than 30% of daily energy (about 67–83 grams for a 2,000–2,500 calorie diet), and cholesterol intake to under 300 mg/day. This excessive consumption poses long-term health risks, including elevated LDL ("bad") cholesterol, which promotes arteriosclerosis and increases the likelihood of coronary heart disease (CHD). Reducing or eliminating this habit would significantly lower saturated fat and cholesterol intake, improve blood lipid profiles, and reduce the risk of cardiovascular disease.  
+**2) Added 4.15 cups brown rice:** Consuming whole grain brown rice supports adherence to global dietary guidelines (like WHO, AHA, and USDA) which recommend whole grains and fiber-rich foods as part of a healthy diet. Brown rice is rich in starches and dietary fiber, promotes gut microbiota activity that produces short-chain fatty acids (SCFAs), which enhance colon health, reduce inflammation, support immune function, and inhibit harmful bacteria. These SCFAs also contribute to daily energy needs and help maintain intestinal barrier integrity. Regular intake of brown rice is linked to reduced risks of colorectal cancer, cardiovascular disease, type 2 diabetes, and weight gain. 
